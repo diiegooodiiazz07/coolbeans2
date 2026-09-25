@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Beans | Espacio Creativo & Specialty Coffee · Vegueta</title>
+  <meta name="description" content="Café de especialidad, brunch de masa madre, repostería artesanal y espacio creativo multidisciplinar en el casco histórico de Vegueta, Las Palmas.">
+
+  <!-- Tailwind & FontAwesome & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cb: {
+              green: '#2A5C43',
+              greenDark: '#1E4331',
+              lightGreen: '#EBF3EE',
+              cream: '#FAF7F2',
+              sand: '#EFE8DC',
+              charcoal: '#1A211D',
+              muted: '#637067'
+            }
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cb-cream text-cb-charcoal font-sans antialiased selection:bg-cb-green selection:text-white">
+
+  <!-- Banner Superior -->
+  <div class="bg-cb-green text-white text-xs py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2 font-medium">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-300 animate-pulse"></span>
+        <span>Espacio Creativo & Specialty Coffee en Calle Audiencia, 7 · Vegueta</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] uppercase tracking-wider font-semibold">
+        <span><i class="fa-regular fa-clock mr-1"></i> Desayunos & Brunch</span>
+        <span>•</span>
+        <a href="https://www.instagram.com/coolbeans_espaciocreativo/" target="_blank" class="hover:text-emerald-200"><i class="fa-brands fa-instagram mr-1"></i> @coolbeans_espaciocreativo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 bg-cb-cream/95 backdrop-blur border-b border-cb-sand">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-cb-green text-white flex items-center justify-center font-bold shadow-md shadow-cb-green/20">
+          <i class="fa-solid fa-mug-saucer text-lg"></i>
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-xl tracking-tight text-cb-charcoal block leading-none">COOL BEANS</span>
+          <span class="text-[10px] uppercase font-bold tracking-[0.25em] text-cb-muted block mt-1">Espacio Creativo · Vegueta</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-xs uppercase tracking-widest font-bold text-stone-600">
+        <a href="#concepto" class="hover:text-cb-green transition-colors">El Espacio</a>
+        <a href="#carta" class="hover:text-cb-green transition-colors">Carta & Brunch</a>
+        <a href="#especialidad" class="hover:text-cb-green transition-colors">Specialty Coffee</a>
+        <a href="#asistente" class="hover:text-cb-green transition-colors">Asistente 24h</a>
+        <a href="#visitanos" class="hover:text-cb-green transition-colors">Horarios</a>
+      </nav>
+
+      <a href="https://maps.google.com/?q=Calle+Audiencia+7+Las+Palmas" target="_blank" class="bg-cb-green hover:bg-cb-greenDark text-white text-xs uppercase font-extrabold tracking-wider px-5 py-3 rounded-full transition-all shadow-md flex items-center gap-2">
+        <i class="fa-solid fa-diamond-turn-right"></i> Cómo Llegar
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-16 sm:py-24 border-b border-cb-sand relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 bg-cb-lightGreen text-cb-green px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+          <i class="fa-solid fa-seedling"></i> Cafetería de Especialidad & Entorno Creativo
+        </div>
+        <h1 class="font-display text-4xl sm:text-6xl font-extrabold text-cb-charcoal tracking-tight leading-[1.1] mb-6">
+          Café de verdad, masa madre y cultura en el corazón de <span class="text-cb-green">Vegueta</span>.
+        </h1>
+        <p class="text-cb-muted text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+          Un refugio histórico diseñado para saborear recetas artesanales, trabajar con calma y disfrutar de microlotes de café de especialidad infusionados por baristas.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#carta" class="bg-cb-green hover:bg-cb-greenDark text-white font-bold px-7 py-4 rounded-xl shadow-lg shadow-cb-green/20 flex items-center justify-center gap-2 text-sm transition-all">
+            <i class="fa-solid fa-utensils"></i> Explorar la Carta Completa
+          </a>
+          <a href="#asistente" class="bg-white hover:bg-stone-50 border border-stone-300 text-cb-charcoal font-bold px-7 py-4 rounded-xl flex items-center justify-center gap-2 text-sm transition-all shadow-sm">
+            <i class="fa-solid fa-robot text-cb-green"></i> Preguntar al Asistente
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-5 relative">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-stone-200">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="Brunch y café en Vegueta" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl border border-stone-200 max-w-xs">
+          <p class="text-xs font-bold text-cb-green uppercase tracking-wider mb-1"><i class="fa-solid fa-heart mr-1"></i> Masa Madre & Producto Local</p>
+          <p class="text-xs text-stone-600">Huevos de campo, yogur artesanal de Leche Sandra y quesos de nuestras islas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Puntos Fuertes -->
+  <section id="concepto" class="py-16 bg-white border-b border-cb-sand">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-2xl bg-cb-cream border border-cb-sand">
+        <div class="w-12 h-12 rounded-xl bg-cb-green text-white flex items-center justify-center text-lg mb-4">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <h3 class="font-display font-bold text-lg text-cb-charcoal mb-2">Specialty Coffee</h3>
+        <p class="text-cb-muted text-xs leading-relaxed">Extracciones en espresso y métodos de filtro manual (V60, Chemex) con granos trazables de pequeños productores.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-cb-cream border border-cb-sand">
+        <div class="w-12 h-12 rounded-xl bg-cb-green text-white flex items-center justify-center text-lg mb-4">
+          <i class="fa-solid fa-bread-slice"></i>
+        </div>
+        <h3 class="font-display font-bold text-lg text-cb-charcoal mb-2">Brunch de Autor</h3>
+        <p class="text-cb-muted text-xs leading-relaxed">Platos calientes cocinados al momento: Shakshuka, brioches caseros, setas con chimichurri y pancakes de masa madre.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-cb-cream border border-cb-sand">
+        <div class="w-12 h-12 rounded-xl bg-cb-green text-white flex items-center justify-center text-lg mb-4">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <h3 class="font-display font-bold text-lg text-cb-charcoal mb-2">Atmósfera Multidisciplinar</h3>
+        <p class="text-cb-muted text-xs leading-relaxed">Arquitectura singular de Vegueta con luz natural, Wi-Fi estable y el clima ideal para reuniones informales y creatividad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTA COMPLETA INTERACTIVA (Datos reales de Cool Beans) -->
+  <section id="carta" class="py-20 bg-cb-cream">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-cb-green text-xs font-bold uppercase tracking-[0.2em] block mb-2">Hecho con amor</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-cb-charcoal">Nuestra Carta</h2>
+        <p class="text-cb-muted text-sm mt-2">Ingredientes honestos, recetas caseras y combinaciones de temporada.</p>
+      </div>
+
+      <!-- Pestañas Filtros de Carta -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <button onclick="filterMenu('brunch')" id="btn-brunch" class="menu-tab-btn active bg-cb-green text-white px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all">
+          🍳 Brunch & Calientes
+        </button>
+        <button onclick="filterMenu('tostadas')" id="btn-tostadas" class="menu-tab-btn bg-white border border-stone-300 text-stone-700 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:border-cb-green transition-all">
+          🍞 Hogaza & Tostadas
+        </button>
+        <button onclick="filterMenu('dulce')" id="btn-dulce" class="menu-tab-btn bg-white border border-stone-300 text-stone-700 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:border-cb-green transition-all">
+          🥞 Dulces & Repostería
+        </button>
+        <button onclick="filterMenu('cafe')" id="btn-cafe" class="menu-tab-btn bg-white border border-stone-300 text-stone-700 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:border-cb-green transition-all">
+          ☕ Specialty Coffee & Bebidas
+        </button>
+      </div>
+
+      <!-- Platos Brunch -->
+      <div id="cat-brunch" class="menu-category grid sm:grid-cols-2 gap-4">
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Setas al chimichurri con hummus</h4>
+            <p class="text-xs text-cb-muted">Hummus sedoso, almendras tostadas crujientes y focaccia casera de masa madre.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">13,50 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Huevos revueltos con bacon y focaccia</h4>
+            <p class="text-xs text-cb-muted">Huevos de campo revueltos, mantequilla de hierbas aromáticas y focaccia casera.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">13,00 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Shakshuka con chorizo y huevo</h4>
+            <p class="text-xs text-cb-muted">Guiso tradicional especiado de tomate y pimientos con huevo a la plancha y tostada.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">12,00 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Multicereal con setas braseadas</h4>
+            <p class="text-xs text-cb-muted">Pan multicereal, chucrut artesano, queso gouda fundido, huevo a la plancha y salvia frita.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">12,50 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Brioche de huevos revueltos</h4>
+            <p class="text-xs text-cb-muted">Pan brioche tierno, mayonesa casera de eneldo y pepinos encurtidos al punto.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">9,50 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Brioche mixto artesanal</h4>
+            <p class="text-xs text-cb-muted">Jamón cocido de primera calidad, queso gouda y mantequilla tostada.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">6,50 €</span>
+        </div>
+      </div>
+
+      <!-- Platos Tostadas -->
+      <div id="cat-tostadas" class="menu-category hidden grid sm:grid-cols-2 gap-4">
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Sándwich de chutney de tuno indio</h4>
+            <p class="text-xs text-cb-muted">Chutney casero de tuno indio canario y queso semicurado fundido.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">9,90 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Tostada de Almogrote y miel</h4>
+            <p class="text-xs text-cb-muted">Almogrote tradicional gomero casero suavizado con un hilo de miel pura.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">5,50 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Tostada de Crema de Tomate y ajo</h4>
+            <p class="text-xs text-cb-muted">Emulsión casera de tomate maduro, AOVE premium, toque sutil de ajo y sal negra.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">4,50 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Hogaza Clásica con AOVE Premium</h4>
+            <p class="text-xs text-cb-muted">Pan de masa madre tostado, aceite de oliva virgen extra de cosecha y sal negra.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">3,50 €</span>
+        </div>
+      </div>
+
+      <!-- Platos Dulces -->
+      <div id="cat-dulce" class="menu-category hidden grid sm:grid-cols-2 gap-4">
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Pancakes de masa madre con gofio</h4>
+            <p class="text-xs text-cb-muted">Crema casera de gofio canario, fruta fresca de temporada y caramelo salado casero.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">12,00 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Granola Bowl casero</h4>
+            <p class="text-xs text-cb-muted">Yogur natural artesanal de Gran Canaria (Leche Sandra), crema pura de pistacho y fruta fresca.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">8,00 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Cinnamon Roll Casero</h4>
+            <p class="text-xs text-cb-muted">Recién horneado con canela aromática y glaseado suave.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">4,00 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Cookie 3 Chocolates con Sal Marina</h4>
+            <p class="text-xs text-cb-muted">Interior fundente con tres tipos de chocolate y cristales de sal al punto.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">3,50 €</span>
+        </div>
+      </div>
+
+      <!-- Bebidas & Café -->
+      <div id="cat-cafe" class="menu-category hidden grid sm:grid-cols-2 gap-4">
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Espresso Simple / Doble</h4>
+            <p class="text-xs text-cb-muted">Extracción precisa de microlote 100% arábica de origen seleccionado.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">2,20 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Flat White / Cortado</h4>
+            <p class="text-xs text-cb-muted">Doble carga de espresso con leche fresca texturizada sedosa o bebida de avena.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">2,80 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Filtro Manual (V60 / Batch Brew)</h4>
+            <p class="text-xs text-cb-muted">Taza limpia y aromática donde brillan las notas frutales y florales del café.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">3,80 €</span>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-cb-sand flex justify-between items-start">
+          <div class="pr-4">
+            <h4 class="font-bold text-sm text-cb-charcoal mb-1">Kombucha & Zumos Prensados</h4>
+            <p class="text-xs text-cb-muted">Bebidas fermentadas vivas y combinaciones de fruta 100% natural sin azúcares añadidos.</p>
+          </div>
+          <span class="font-display font-extrabold text-cb-green text-base">4,20 €</span>
+        </div>
+      </div>
+
+      <!-- Nota al pie -->
+      <div class="text-center mt-8 text-xs text-stone-500">
+        <span>* Opciones sin gluten disponibles (+1,50 €) · Suplementos y extras a elegir (+2,00 €)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demostrador Asistente Inteligente -->
+  <section id="asistente" class="py-20 bg-white border-t border-cb-sand">
+    <div class="max-w-xl mx-auto px-4">
+      <div class="text-center mb-8">
+        <span class="inline-flex items-center gap-1.5 bg-cb-lightGreen text-cb-green text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+          Concierge Digital Demostrativo
+        </span>
+        <h2 class="font-display text-3xl font-extrabold text-cb-charcoal">Atención Inmediata 24/7</h2>
+        <p class="text-stone-500 text-xs mt-1">Prueba cómo resolvería las dudas típicas de tus clientes:</p>
+      </div>
+
+      <div class="bg-cb-cream rounded-3xl border border-cb-sand overflow-hidden shadow-2xl">
+        <div class="bg-cb-charcoal text-white p-4 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-cb-green text-white flex items-center justify-center font-bold text-xs">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+            <div>
+              <h4 class="font-display font-bold text-xs">Asistente Cool Beans</h4>
+              <span class="text-emerald-400 text-[10px] flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Vegueta · Activo
+              </span>
+            </div>
+          </div>
+          <span class="text-[10px] uppercase tracking-widest text-stone-400">Atención Web</span>
+        </div>
+
+        <div id="cb-chat-full" class="p-4 h-64 overflow-y-auto space-y-3 text-xs bg-white/70">
+          <div class="bg-cb-sand/70 text-cb-charcoal p-3.5 rounded-2xl rounded-tl-none max-w-[85%] leading-relaxed border border-stone-200">
+            ¡Hola! 🌿 Bienvenidos a <strong>Cool Beans Vegueta</strong>. ¿En qué podemos inspirarte hoy? Puedes consultar la ubicación, opciones sin gluten o nuestro espacio de trabajo.
+          </div>
+        </div>
+
+        <div class="p-3 bg-white border-t border-cb-sand flex flex-wrap gap-2 text-[11px]">
+          <button onclick="askCoolFull('laptop')" class="bg-cb-cream hover:bg-cb-green hover:text-white border border-cb-sand px-3 py-1.5 rounded-full transition-all">
+            💻 ¿Tienen enchufes y buen Wi-Fi?
+          </button>
+          <button onclick="askCoolFull('gluten')" class="bg-cb-cream hover:bg-cb-green hover:text-white border border-cb-sand px-3 py-1.5 rounded-full transition-all">
+            🌾 ¿Tienen pan sin gluten?
+          </button>
+          <button onclick="askCoolFull('plato')" class="bg-cb-cream hover:bg-cb-green hover:text-white border border-cb-sand px-3 py-1.5 rounded-full transition-all">
+            ⭐ ¿Cuál es el plato estrella del brunch?
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer y Mapa -->
+  <footer id="visitanos" class="bg-cb-charcoal text-stone-300 py-16 text-xs border-t border-stone-800">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div>
+        <span class="font-display font-extrabold text-xl text-white block mb-3">COOL BEANS</span>
+        <p class="text-stone-400 text-xs leading-relaxed mb-4">Espacio creativo, tostadores y cocina artesanal en el corazón señorial de Vegueta.</p>
+        <p class="text-stone-500">Calle Audiencia, 7, 35001 Las Palmas de Gran Canaria</p>
+      </div>
+
+      <div>
+        <span class="font-display font-bold text-sm text-white uppercase tracking-wider block mb-3">Horario Habitual</span>
+        <p class="text-stone-400 mb-1">Lunes a Viernes: 08:30 a 16:30 h</p>
+        <p class="text-stone-400 mb-1">Sábados y Domingos: 09:00 a 16:00 h</p>
+        <p class="text-stone-500 mt-3 text-[11px]">Cocina de brunch abierta de forma continua.</p>
+      </div>
+
+      <div>
+        <span class="font-display font-bold text-sm text-white uppercase tracking-wider block mb-3">Conecta con Nosotros</span>
+        <div class="flex gap-4 text-base mb-4">
+          <a href="https://www.instagram.com/coolbeans_espaciocreativo/" target="_blank" class="text-white hover:text-emerald-400"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://maps.google.com/?q=Calle+Audiencia+7+Las+Palmas" target="_blank" class="text-white hover:text-emerald-400"><i class="fa-solid fa-map-location-dot"></i></a>
+        </div>
+        <p class="text-stone-500 text-[10px]">Propuesta de plataforma digital interactiva para Cool Beans Espacio Creativo.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function filterMenu(cat) {
+      document.querySelectorAll('.menu-category').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.menu-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-cb-green', 'text-white');
+        btn.classList.add('bg-white', 'text-stone-700');
+      });
+
+      document.getElementById('cat-' + cat).classList.remove('hidden');
+      const activeBtn = document.getElementById('btn-' + cat);
+      activeBtn.classList.add('bg-cb-green', 'text-white');
+      activeBtn.classList.remove('bg-white', 'text-stone-700');
+    }
+
+    function askCoolFull(q) {
+      const box = document.getElementById('cb-chat-full');
+      const data = {
+        laptop: {
+          u: "¿Tienen enchufes y buen Wi-Fi?",
+          b: "¡Sí! Somos un espacio híbrido café-coworking. Contamos con conexión de alta velocidad y mesas adaptadas para creadores y trabajo remoto."
+        },
+        gluten: {
+          u: "¿Tienen pan sin gluten?",
+          b: "¡Por supuesto! Disponemos de opción de pan especial sin gluten para todas nuestras tostadas y platos de brunch por un pequeño suplemento de +1,50 €."
+        },
+        plato: {
+          u: "¿Cuál es el plato estrella del brunch?",
+          b: "Nuestros favoritos más pedidos son las <strong>Setas al chimichurri con focaccia</strong> y los <strong>Pancakes de masa madre con crema casera de gofio y caramelo salado</strong>. ¡Imperdibles!"
+        }
+      }[q];
+
+      box.innerHTML += `<div class="bg-cb-green text-white p-3 rounded-2xl rounded-tr-none max-w-[80%] ml-auto text-right font-medium">${data.u}</div>`;
+      setTimeout(() => {
+        box.innerHTML += `<div class="bg-cb-sand/70 text-cb-charcoal p-3.5 rounded-2xl rounded-tl-none max-w-[85%] leading-relaxed border border-stone-200">${data.b}</div>`;
+        box.scrollTop = box.scrollHeight;
+      }, 300);
+    }
+  </script>
+</body>
+</html>
